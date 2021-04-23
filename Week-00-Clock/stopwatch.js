@@ -14,7 +14,7 @@ function startTimer() {
                 document.getElementById('hours').innerHTML = hours;
             }
         }
-        if (sec == 60) {
+        else if (sec == 60) {
             sec = 0;
             min = min + 1;
             if (min < 10) {
@@ -24,7 +24,7 @@ function startTimer() {
                 document.getElementById('minutes').innerHTML = min;
             }
         }
-        if (sec < 60) {
+        else if (sec < 60) {
             sec = sec + 1;
             if (sec < 10) {
                 document.getElementById('seconds').innerHTML = '0' + sec;
