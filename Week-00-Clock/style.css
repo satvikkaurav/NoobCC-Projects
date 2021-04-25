@@ -9,15 +9,12 @@
     background:rgb(1, 22, 48);
     font-size: 500%;
 }
-.sep{
-    height: 10px;
-    color: white;
-}
+
 
 .nav{
     display: flex;
     font-family: Comic sans ms;
-    position: fixed;
+    position: absolute;
     flex-direction: column;
     justify-content:space-evenly;
     background: grey;
@@ -102,4 +99,12 @@ table,td{
     justify-content:center;
     flex-direction: row;
     margin-right: 38px;
+}
+#digital:hover, #stopwatch:hover , #timer:hover{
+    background-color: rgb(20, 1, 1);
+    
+}
+a{
+    color:white;
+    text-decoration: none;
 }
