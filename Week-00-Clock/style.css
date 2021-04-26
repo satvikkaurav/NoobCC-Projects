@@ -90,7 +90,6 @@ table,td{
     width:20px ;
 }
 .change{
-    
     background-color: gray;
 }
 #timer-buttons{
@@ -108,3 +107,7 @@ a{
     color:white;
     text-decoration: none;
 }
+/* .over{
+    text-align: center;
+    font-size: 40px;
+} */

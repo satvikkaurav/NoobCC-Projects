@@ -2,9 +2,10 @@ var hours = 0;
 var min = 0;
 var sec = 0;
 var s;
+
 function startTimer() {
     function timer() {
-        if (min == 60) {
+        if (min == 59) {
             min = 0;
             hours = hours + 1;
             if (hours < 10) {
@@ -14,7 +15,7 @@ function startTimer() {
                 document.getElementById('hours').innerHTML = hours;
             }
         }
-        else if (sec == 60) {
+        else if (sec == 59) {
             sec = 0;
             min = min + 1;
             if (min < 10) {
@@ -24,7 +25,7 @@ function startTimer() {
                 document.getElementById('minutes').innerHTML = min;
             }
         }
-        else if (sec < 60) {
+        else if (sec < 59) {
             sec = sec + 1;
             if (sec < 10) {
                 document.getElementById('seconds').innerHTML = '0' + sec;
@@ -39,8 +40,12 @@ function startTimer() {
 function stopTimer() {
     clearInterval(s);
 }
+
 function resetTimer() {
-    document.getElementById('seconds').innerHtml = '00';
-    document.getElementById('minutes').innerHtml = '00';
-    document.getElementById('hours').innerHtml = '00';
+    min=0;
+    sec=0;
+    hours=0;
+    document.getElementById('seconds').innerHtml = sec;
+    document.getElementById('minutes').innerHtml = min;
+    document.getElementById('hours').innerHtml = hours;
 }
