@@ -1,6 +1,7 @@
 :root{
     background:rgb(1, 22, 48);
     color: white;
+    cursor:default;
 }
 #title{
     margin: 0%;
